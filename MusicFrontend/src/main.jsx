@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './HomeComponent/Home'
-// import App from './App'
-// import Register from  './LoginComponent/Register'
+// import AdminHome from './AdminComponent/AdminHome'
+import Landing from './LandingComponent/Landing'
+ import Home from './HomeComponent/Home'
+// import Login from  './LoginComponent/Login'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <Landing/>
+    {/* <Home/> */}
   </React.StrictMode>,
 )

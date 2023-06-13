@@ -8,7 +8,7 @@ function Footer() {
   const audioRef = useRef(null);
   const [volume, setVolume] = useState(0.5);
   const [isShuffleOn, setIsShuffleOn] = useState(false);
-  const songs = ['/src/assets/Midnight Rain - Taylor Swift.m4a', '/src/assets/deja vu - Olivia Rodrigo.m4a', '/src/assets/Back To December - Taylor Swift.m4a', '/src/assets/Calm Down (Remix) - Dj Luli Torres.m4a', '/src/assets/Soundtrack) - Teriyaki Boyz.m4a']; // Replace with your song URLs
+  const songs = ['/src/assets/Midnight Rain - Taylor Swift.m4a','/src/assets/Six Days (Remix) (feat. Mos Def) - DJ Shadow.m4a','/src/assets/deja vu - Olivia Rodrigo.m4a', '/src/assets/Back To December - Taylor Swift.m4a', '/src/assets/Calm Down (Remix) - Dj Luli Torres.m4a', '/src/assets/Soundtrack) - Teriyaki Boyz.m4a']; // Replace with your song URLs
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [rating, setRating] = useState(0);
 
