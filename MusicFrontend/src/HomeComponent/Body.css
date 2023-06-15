@@ -1,4 +1,4 @@
-.body {
+.Homebody {
   flex: 0.8;
   align-items: center;
   justify-content: center;
@@ -9,13 +9,13 @@
   border-top-right-radius: 12px;
 }
 
-.bodyInfo {
+.HomebodyInfo {
   display: flex;
   justify-content: center;
   height: 12rem;
 }
 
-hr {
+.Homehr {
   color: #dfdfdf;
   height: 1px;
   border: none;
@@ -23,7 +23,7 @@ hr {
   margin-bottom: 22px;
 }
 
-.card {
+.Hcard {
   position: absolute;
   width: 47%;
   height: 12rem;
@@ -34,11 +34,11 @@ hr {
   cursor: pointer;
 }
 
-.radios {
+.Hradios {
   display: none;
 }
 
-.container {
+.Homecontainer {
   width: 100%;
   max-width: 800px;
   max-height: 600px;
@@ -50,150 +50,149 @@ hr {
   align-items: center;
 }
 
-.cards {
+.Hcards {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
 }
 
-img {
+.HomeSongImg {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
 }
 
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2 {
+#item-1:checked ~ .Hcards #song-3,
+#item-2:checked ~ .Hcards #song-1,
+#item-3:checked ~ .Hcards #song-2 {
   transform: translatex(-40%) scale(.8);
   opacity: .4;
   z-index: 0;
   box-shadow: 0 0 38px whitesmoke;
 }
 
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1 {
+#item-1:checked ~ .Hcards #song-2,
+#item-2:checked ~ .Hcards #song-3,
+#item-3:checked ~ .Hcards #song-1 {
   transform: translatex(40%) scale(.8);
   opacity: .4;
   z-index: 0;
   box-shadow: 0 0 38px whitesmoke;
 }
 
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3 {
+#item-1:checked ~ .Hcards #song-1,
+#item-2:checked ~ .Hcards #song-2,
+#item-3:checked ~ .Hcards #song-3 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
 
-.albumtitles {
+.Halbumtitles {
   margin-left: 24px;
   line-height: 4px;
 }
 
-.albumtitles > p {
+.Halbumtitles > p {
   color: grey;
   font-size: 12px;
 }
 
-.album {
+.Halbum {
   height: 81px;
   border-radius: 13px;
   width: 87px;
   object-fit: contain;
 }
 
-.albumList {
+.HalbumList {
   display: flex;
   flex-direction: row;
   margin: 2rem;
 }
 
-.cover {
+.Hcover {
   display: flex;
   flex-direction: column;
-  line-height: 1px;
   align-items: center;
   margin-inline: 10px;
 }
 
-.songName {
-  margin-bottom: 6px;
+.HsongName {
+  margin-bottom: 1px;
   font-size: 12px;
 }
 
-.artist {
+.Hartist {
   font-size: 11px;
   color: grey;
 }
 
 /* Responsive styles for tablets and larger screens */
 @media screen and (max-width: 1024px) {
-  .bodyInfo {
+  .HomebodyInfo {
     height: auto;
     padding: 1rem;
     flex-wrap: wrap;
     align-items: center;
   }
 
-  .card {
+  .Hcard {
     width: 90%;
   }
 
-  .albumList {
+  .HalbumList {
     flex-wrap: wrap;
     justify-content: center;
     margin: 1rem;
   }
 
-  .cover {
+  .Hcover {
     margin: 0.5rem;
   }
 }
 
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 480px) {
-  .bodyInfo {
+  .HomebodyInfo {
     height: auto;
     padding: 1rem;
     flex-direction: column;
     align-items: center;
   }
 
-  .card {
+  .Hcard {
     width: 100%;
   }
 
-  .cards {
+  .Hcards {
     position: relative; /* Add this property */
     height: 180px; /* Adjust the height as needed */
     overflow: hidden; /* Add this property */
   }
 
-  .albumList {
+  .HalbumList {
     flex-wrap: wrap;
     justify-content: center;
     margin: 1rem;
   }
 
-  .cover {
+  .Hcover {
     margin: 0.5rem;
     width: 100%; /* Add this property */
   }
 
-  .album {
+  .Halbum {
     height: auto; /* Change height to auto */
     width: 100%; /* Add this property */
   }
 
-  .songName {
+  .HsongName {
     font-size: 14px;
   }
 
-  .artist {
+  .Hartist {
     font-size: 13px;
   }
 }

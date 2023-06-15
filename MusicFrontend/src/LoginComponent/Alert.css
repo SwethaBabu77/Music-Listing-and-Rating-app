@@ -1,0 +1,27 @@
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .alert.success {
+    background-color: #5cb85c;
+    color: #fff;
+  }
+  
+  .alert.error {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .alert.info {
+    background-color: #5bc0de;
+    color: #fff;
+  }
+  
+  .alert.warning {
+    background-color: #f0ad4e;
+    color: #fff;
+  }
+  

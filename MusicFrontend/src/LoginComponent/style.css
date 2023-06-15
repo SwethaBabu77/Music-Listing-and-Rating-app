@@ -1,12 +1,13 @@
-*{
+.Lomain{
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
   font-weight: 300;    
 }
 
-:root {
+/* :root {
   --primary: rgb(182, 157, 230);
-}
-.main{
+} */
+
+.Lomain{
   height: 100vh;
   margin: 0;
   display: flex;
@@ -29,14 +30,14 @@
 
 
 
-h4 {
+.h4Lo {
   font-size: 24px;
   font-weight: 600;
   color: #000;
   opacity: .85;
 }
 
-label {
+.lolabel {
   font-size: 12.5px;
   color: #000;
   opacity: .8;
@@ -53,12 +54,12 @@ form {
   width: 300px;
 }
 
-form h4 {
+.h4Lo {
   margin-bottom: 20px;
   color: rgba(0, 0, 0, .5);
 }
 
-form h4 span {
+.h4Lo span {
   color: rgba(0, 0, 0, 1);
   font-weight: 700;
 }
@@ -89,7 +90,7 @@ a.discrete:hover {
   border-bottom: solid 1px rgba(0, 0, 0, .2);
 }
 
-button {
+.Loginbb {
   -webkit-appearance: none;
   width: auto;
   min-width: 100px;
@@ -110,16 +111,16 @@ button {
   
 }
 
-button:hover {
+.Loginbb:hover {
   transform: translateY(-3px);
   box-shadow: 0 2px 6px -1px rgba(var(--primary), .65);
 }
 
-button:active {
+.Loginbb:active {
   transform: scale(.99);
 }
 
-input {
+.Loinput{
   font-size: 16px;
   padding: 20px 0px;
   height: 56px;
@@ -134,7 +135,7 @@ input {
   -webkit-appearance: none;
 }
 
-input:focus {
+.Loinput:focus {
   border-bottom: solid 1px var(--primary);
   outline: 0;
   box-shadow: 0 2px 6px -8px rgba(var(--primary), .45);
@@ -146,7 +147,7 @@ input:focus {
   width: 100%;
 }
 
-.floating-label label {
+.lolabel {
   position: absolute;
   top: calc(50% - 7px);
   left: 0;
@@ -155,7 +156,7 @@ input:focus {
   padding-left: 44px;
 }
 
-.floating-label input {
+.floating-label .Loinput {
   width: calc(100% - 44px);
   margin-left: auto;
   display: flex;
@@ -182,24 +183,24 @@ input:focus {
   transition: all .3s ease;
 }
 
-.floating-label input:not(:placeholder-shown) {
+.Loinput:not(:placeholder-shown) {
   padding: 28px 0px 12px 0px;
 }
 
-.floating-label input:not(:placeholder-shown) + label {
+.Loinput:not(:placeholder-shown) + .lolabel {
   transform: translateY(-10px);
   opacity: .7;
 }
 
-.floating-label input:valid:not(:placeholder-shown) + label + .icon svg {
+.Loinput:valid:not(:placeholder-shown) + .lolabel + .icon svg {
   opacity: 1;
 }
 
-.floating-label input:valid:not(:placeholder-shown) + label + .icon svg path {
+.Loinput:valid:not(:placeholder-shown) + .lolabel + .icon svg path {
   fill: var(--primary);
 }
 
-.floating-label input:not(:valid):not(:focus) + label + .icon {
+.Loinput:not(:valid):not(:focus) + .lolabel + .icon {
   animation-name: shake-shake;
   animation-duration: .3s;
 }
@@ -225,7 +226,7 @@ input:focus {
   }
 }
 
-.session {
+.Losession {
   display: flex;
   flex-direction: row;
   width: auto;
@@ -236,7 +237,7 @@ input:focus {
   box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, .12);
 }
 
-.session .left {
+.Losession .Loleft {
   width: 220px;
   height: auto;
   min-height: 100%;
@@ -247,7 +248,7 @@ input:focus {
   border-bottom-left-radius: 4px;
 }
 
-.session .left svg {
+.Losession .Loleft svg {
   height: 40px;
   width: auto;
   margin: 20px;

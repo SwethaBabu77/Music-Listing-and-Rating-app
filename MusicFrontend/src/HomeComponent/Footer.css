@@ -1,12 +1,11 @@
-.footer {
+.HomePagefooter {
   position: fixed;
   display: flex;
   justify-content: space-between;
   bottom: 0;
-  height: 33px;
-  width: 96%;
+  width: 100%;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 7px;
 }
 
 .footerAlbum {
@@ -16,7 +15,7 @@
   object-fit: contain;
 }
 
-input[type='range'] {
+.Frange{
   -webkit-appearance: none;
   height: 8px;
   background-color: #000000;
@@ -25,7 +24,7 @@ input[type='range'] {
   cursor: pointer;
 }
 
-.footerLeft {
+.HomefooterLeft {
   flex: 0.3;
   display: flex;
   align-items: center;
@@ -36,14 +35,15 @@ input[type='range'] {
 .footerSongInfo {
   line-height: 3px;
 }
-
+.Footitle{
+  font-size: 13px;
+}
 .footerSongInfo > p {
   font-size: 12px;
 }
 
-.footerCenter {
+.HomefooterCenter {
   flex: 0.4;
-  padding: 0 100px;
   color: #24ab74;
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ button {
   background-color: white;
 }
 
-.footerRight {
+.HomefooterRight {
   flex: 0.3;
   display: flex;
   justify-content: space-between;
@@ -64,11 +64,11 @@ button {
   color: #24ab74;
 }
 
-.footerRating {
+.HomefooterRating {
   display: flex;
 }
 
-.footerRating button {
+.HomefooterRating button {
   background: none;
   border: none;
   cursor: pointer;
@@ -76,14 +76,14 @@ button {
   padding: 0;
 }
 
-.footerRating button.active {
+.HomefooterRating button.active {
   color: #24ab74;
 }
 
 /* Responsive Styles */
 
 @media (max-width: 768px) {
-  .footer {
+  .HomePagefooter {
     padding: 10px;
     height: 60px;
     flex-direction: column;
@@ -96,21 +96,22 @@ button {
     margin-right: 10px;
   }
 
-  .footerLeft {
+  .HomefooterLeft {
     width: auto;
     margin-bottom: 10px;
+    
   }
 
   .footerSongInfo {
     display: none;
   }
 
-  .footerCenter {
+  .HomefooterCenter {
     padding: 0;
     max-width: 200px;
   }
 
-  .footerRight {
+  .HomefooterRight {
     display: none;
   }
 }

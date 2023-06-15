@@ -10,7 +10,7 @@ function Header() {
             <input type="text" placeholder='search for songs' name="" id="" />
         </div>
         <div className="headerRight">
-            <h4>Swetha</h4>
+            <h4 className='myname'>Swetha</h4>
             <FontAwesomeIcon icon={faUser} style={{color: "#ededed",}} />
         </div>
     </div>

@@ -65,8 +65,6 @@ function Footer() {
   };
 
 
-
-
   const handleVolumeChange = (e) => {
     const newVolume = parseFloat(e.target.value);
     setVolume(newVolume);
@@ -79,16 +77,16 @@ function Footer() {
   const songTitle = songName.split(' - ')[0];
 
   return (
-    <div className="footer">
-      <div className="footerLeft">
+    <div className="HomePagefooter">
+      <div className="HomefooterLeft">
         <img className="footerAlbum" src={`/src/assets/${songName}.jpg`} alt="Album" />
         <div className="footerSongInfo">
-          <h4>{songTitle}</h4>
+          <h4 className='Footitle'>{songTitle}</h4>
           <p>{artist}</p>
         </div>
         {/* icon */}
       </div>
-      <div className="footerCenter">
+      <div className="HomefooterCenter">
         <button onClick={toggleShuffle}><FontAwesomeIcon icon={faShuffle} style={{ color: "#24ab74", }} /></button>
         <button onClick={playPrevious}><FontAwesomeIcon icon={faBackwardStep} style={{ color: "#24ab74", }} /></button>
         <button onClick={togglePlay}>{
@@ -103,11 +101,11 @@ function Footer() {
 
       </div>
       <audio ref={audioRef} src={songs[currentSongIndex]} onEnded={playNext} volume={volume} />
-      <div className="footerRight">
-        <button><FontAwesomeIcon icon={faVolumeLow} style={{ color: "#24ab74", }} /></button>
-        <input type="range" min="0" max="1" step="0.01" value={volume} onChange={(e) => handleVolumeChange(e)} />
+      <div className="HomefooterRight">
+        <button className='Foobutton'><FontAwesomeIcon icon={faVolumeLow} style={{ color: "#24ab74", }} /></button>
+        <input className='Frange' type="range" min="0" max="1" step="0.01" value={volume} onChange={(e) => handleVolumeChange(e)} />
 
-        <div className="footerRating">
+        <div className="HomefooterRating">
           {[1, 2, 3, 4, 5].map((ratingValue) => (
             <button
               key={ratingValue}
