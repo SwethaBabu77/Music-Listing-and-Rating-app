@@ -32,6 +32,17 @@ function EditMusic() {
                     <label className='labelfeild' for='inputs'>Song name</label>
                     <input type="text" className='inputfields' name='inputs'/>
                     </div>
+
+                    <div className='forminputFields'>
+                    <label className='labelfeild' for='inputs'>Song name</label>
+                    <input type="text" className='inputfields' name='inputs'/>
+                    </div>
+
+                    <div className='forminputFields'>
+                    <label className='labelfeild' for='inputs'>Song name</label>
+                    <input type="text" className='inputfields' name='inputs'/>
+                    </div>
+                    
                 </div>
             </div>
         </div>

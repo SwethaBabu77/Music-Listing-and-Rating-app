@@ -1,8 +1,37 @@
 import React,{useState} from 'react'
 import './style.css'
 import video from '../assets/pexels-lui-smither-2531140-1920x1080-24fps.mp4'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 function Login() {
+  const [username,setUsername]= useState('')
+  const [password,setPassword]= useState('')
+  const navigate =useNavigate();
+
+  function handleLogin(event){
+    event.preventDefault();
+
+    const adminCredentials = {
+      username: 'admin',
+      password: 'admin123'
+    };
+    const userCredentials = {
+      username: 'user',
+      password: 'user123'
+    };
+
+    if (username === adminCredentials.username && password === adminCredentials.password) {
+      // Redirect to admin component
+
+      navigate('/Admin');
+    } else if (username === userCredentials.username && password === userCredentials.password) {
+      // Redirect to user component
+
+      navigate('/User');
+    } else {
+      alert('Invalid username or password');
+    }
+
+  }
   return (
         <div className="Lomain">
             <video className="video-background" autoPlay loop muted>
@@ -11,7 +40,7 @@ function Login() {
             <div className="Losession">
           <div className="Loleft">
           </div>
-          <form action="" className="log-in" autoComplete="off">
+          <form action="" className="log-in" autoComplete="off" onSubmit={handleLogin}>
             <h4 className='h4Lo'>We are <span>MUZIX</span></h4>
             <p>Welcome back! Log in to your account</p>
             <p>Not before <Link to="/Register">Register with US</Link></p>
@@ -22,6 +51,8 @@ function Login() {
                 name="username"
                 id="username"
                 autoComplete="off"
+                value={username}
+                onChange={(event)=> setUsername(event.target.value)}
               />
               <label className='lolabel' htmlFor="username">Username:</label>
             </div>
@@ -32,10 +63,12 @@ function Login() {
                 name="password"
                 id="password"
                 autoComplete="off"
+                value={password}
+                onChange={(event)=> setPassword(event.target.value)}
               />
               <label className='lolabel' htmlFor="password">Password:</label>
             </div>
-            <Link to="/Home"><button type="submit" className='Loginbb'>Log in</button></Link>
+           <button type="submit" className='Loginbb'>Log in</button>
           </form>
         </div>
         </div>

@@ -25,13 +25,16 @@
     flex-wrap: wrap;
     margin-top: 5rem;
     justify-content: center;
+    margin-inline: 3rem;
   }
-  
-  p {
+  Link{
+    text-decoration: none;
+  }
+  .cardTitle {
     margin: 0;
   }
   
-  p:not(:last-child) {
+  .cardTitle:not(:last-child) {
     margin-bottom: 1.5em;
   }
   
