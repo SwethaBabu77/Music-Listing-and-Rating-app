@@ -138,7 +138,7 @@ function AddMusic() {
           <div className='Inlineform'>
           <div>
             <label className='AddmusicLabel' htmlFor="UploadMusic">Upload Muisc:</label>
-            <input type="file" accept="image/png, image/jpeg"/>
+            <input className='AddmusicInput' type="file" accept="image/png, image/jpeg"/>
           </div>
           <div>
             <label className='AddmusicLabel' htmlFor="imageUrl">Image Url:</label>
@@ -153,7 +153,11 @@ function AddMusic() {
           </div>
            
 
-          <button className='upload' type="submit">Submit</button>
+           <div>
+           <button className='upload' type="submit">Submit</button>
+           </div>
+
+          
 
 
         </form>

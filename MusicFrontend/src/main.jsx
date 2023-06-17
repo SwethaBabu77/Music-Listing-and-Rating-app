@@ -7,8 +7,9 @@ import Landing from './LandingComponent/Landing'
 import Home from './HomeComponent/Home'
 import Login from  './LoginComponent/Login'
 import Register from  './LoginComponent/Register'
-import AddMusic from './AdminComponent/AddMusic'
+// import AddMusic from './AdminComponent/AddMusic'
 import ViewAllMusic from './AdminComponent/ViewAllMusic';
+import AddMusicWithApi from './AdminComponent/AddMusicWithApi';
 function App(){
   return(
     <>
@@ -17,12 +18,12 @@ function App(){
       <Route path="" element={<Landing/>}/>
       <Route path="/Login" element={<Login/>}/>
       <Route path="/Register" element={<Register/>}/>
-      
+
       <Route path="/User" element={<Home/>}/>
 
       <Route path="/Admin">
         <Route index element={<AdminHome/>}/>
-        <Route path="/Admin/Addmusic" element={<AddMusic/>}/>
+        <Route path="/Admin/Addmusic" element={<AddMusicWithApi/>}/>
         <Route path="/Admin/ViewMusic" element={<ViewAllMusic/>}/>
       </Route>
     </Routes>
