@@ -27,7 +27,8 @@
     justify-content: center;
     margin-inline: 3rem;
   }
-  Link{
+  
+  .link{
     text-decoration: none;
   }
   .cardTitle {
@@ -35,7 +36,7 @@
   }
   
   .cardTitle:not(:last-child) {
-    margin-bottom: 1.5em;
+    margin-bottom: 13px;
   }
   
   .card1 {

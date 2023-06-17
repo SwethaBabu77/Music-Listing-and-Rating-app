@@ -4,7 +4,7 @@
     max-width: 63rem;
     height: 80vh;
     margin-right: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 13px;
     padding: 25px;
     border: 1px solid rgb(0 0 0 / 25%);
     border-radius: 20px;
@@ -31,12 +31,12 @@
   }
 
   .upload{
-      border-radius: 12px;
-      border: 0 solid white;
-      padding-block: 16px;
-      padding-inline: 16px;
-      background-color: #24ab74;
-      color: azure;
+    border-radius: 12px;
+    border: 0 solid white;
+    padding-block: 6px;
+    padding-inline: 9px;
+    background-color: #24ab74;
+    color: azure;
   }
   
 
@@ -61,4 +61,35 @@
 .box:hover i{
     opacity: 0;
     z-index: -1;
+}
+
+.formdiv{
+  
+}
+
+.Inlineform{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 19px;
+}
+
+.AddmusicLabel{
+  color: cornsilk;
+  margin-right: 43px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.AddmusicInput{
+  width: 20rem;
+  border-radius: 12px;
+  border: 1px solid black;
+  padding-block: 6px;
+}
+
+.addbutton{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

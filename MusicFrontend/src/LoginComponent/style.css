@@ -44,7 +44,7 @@
   font-weight: 400;
 }
 
-form {
+.login {
   padding: 40px 30px;
   background: #fefefe;
   display: flex;
@@ -64,7 +64,7 @@ form {
   font-weight: 700;
 }
 
-form p {
+.login p {
   line-height: 155%;
   margin-bottom: 5px;
   font-size: 14px;

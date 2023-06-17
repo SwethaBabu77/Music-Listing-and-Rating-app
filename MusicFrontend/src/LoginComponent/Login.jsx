@@ -7,6 +7,12 @@ function Login() {
   const [password,setPassword]= useState('')
   const navigate =useNavigate();
 
+  const payload={
+    userName: username,
+    userPassword: password
+  }
+  
+
   function handleLogin(event){
     event.preventDefault();
 
@@ -40,7 +46,7 @@ function Login() {
             <div className="Losession">
           <div className="Loleft">
           </div>
-          <form action="" className="log-in" autoComplete="off" onSubmit={handleLogin}>
+          <form action="" className="login" autoComplete="off" onSubmit={handleLogin}>
             <h4 className='h4Lo'>We are <span>MUZIX</span></h4>
             <p>Welcome back! Log in to your account</p>
             <p>Not before <Link to="/Register">Register with US</Link></p>

@@ -35,7 +35,7 @@
     font-weight: 400;
   }
   
-  form {
+  .login {
     padding: 40px 30px;
     background: #fefefe;
     display: flex;
@@ -50,7 +50,7 @@
     color: rgba(0, 0, 0, .5);
   }
   
-  form .Rh4 span {
+  .login .Rh4 span {
     color: rgba(0, 0, 0, 1);
     font-weight: 700;
   }
