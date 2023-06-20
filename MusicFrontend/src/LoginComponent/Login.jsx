@@ -36,7 +36,7 @@ function Login() {
         if(userType==='Admin'){
           navigate('/Admin');
         }else if(userType==='User'){
-          navigate('/User');
+          navigate('/Home');
         }else{
           alert('Invalid user type');
         }
@@ -56,7 +56,7 @@ function Login() {
       navigate('/Admin');
     } else if (userName === userCredentials.userName && userPassword === userCredentials.userPassword) {
       // Redirect to user component
-      navigate('/User');
+      navigate('/Home');
     } else {
       alert('Invalid username or password');
     }

@@ -1,0 +1,27 @@
+.Homebody {
+    flex: 0.8;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    transition: background .4s ease-in;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    border-top-right-radius: 12px;
+  }
+
+  .HomebodyInfo {
+    display: flex;
+    justify-content: center;
+    height: 13rem;
+    margin-top: 6rem;
+  }
+
+  .viewCard{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;  */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 1rem;
+  }
+  

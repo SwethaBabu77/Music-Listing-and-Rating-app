@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   height: 13rem;
+  margin-top: 6rem;
 }
 
 .Homehr {
@@ -221,6 +222,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
 }
 .Bcard .face.face1 .java {
   background-color: #fffc00;

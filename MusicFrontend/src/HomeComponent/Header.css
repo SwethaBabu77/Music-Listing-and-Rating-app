@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2px;
+    position: absolute;
+    left: 22rem;
+    top: 0;
+    width: 77%;
     margin-top: 13px;
 }
 

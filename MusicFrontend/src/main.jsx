@@ -7,11 +7,11 @@ import Landing from './LandingComponent/Landing'
 import Home from './HomeComponent/Home'
 import Login from  './LoginComponent/Login'
 import Register from  './LoginComponent/Register'
-//  import AddMusic from './AdminComponent/AddMusic'
+import AddMusic from './AdminComponent/AddMusic'
 import ViewAllMusic from './AdminComponent/ViewAllMusic';
 import EditMusic from './AdminComponent/EditMusic';
 import DeleteMusic from './AdminComponent/DeleteMusic';
-import AddMusicWithApi from './AdminComponent/AddMusicWithApi';
+import AllSongs from './HomeComponent/AllSongs'
 
 function App(){
   return(
@@ -22,15 +22,19 @@ function App(){
       <Route path="/Login" element={<Login/>}/>
       <Route path="/Register" element={<Register/>}/>
 
-      <Route path="/User" element={<Home/>}/>
+      <Route path="/Home">
+      <Route index element={<Home/>}/>
+      <Route path="/Home/AllSongs" element={<AllSongs/>}/>
+      </Route>
 
       <Route path="/Admin">
         <Route index element={<AdminHome/>}/>
-        <Route path="/Admin/Addmusic" element={<AddMusicWithApi/>}/>
+        <Route path="/Admin/Addmusic" element={<AddMusic/>}/>
         <Route path="/Admin/ViewMusic" element={<ViewAllMusic/>}/>
         <Route path="/Admin/EditMusic" element={<EditMusic/>}/> 
         <Route path="/Admin/DeleteMusic" element={<DeleteMusic/>}/> 
       </Route>
+
     </Routes>
     </BrowserRouter>
     </>
