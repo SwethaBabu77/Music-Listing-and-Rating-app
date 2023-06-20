@@ -27,55 +27,126 @@ function Body() {
     </div>
     </div>
     <div className="Halbumtitles">
+      <div className='Hfeatures'>
       <h3>Featured</h3>
       <p>THIS WEEK</p>
+      </div>
+
+      <div className='seeAll'>
+      <p className='SeeAllp'>See All</p>
+    </div>
     </div>
     <div className="HalbumList">
-      <div className='Hcover'>
-        <img className='Halbum' src="https://tse2.mm.bing.net/th/id/OIP.Bi_MgLOxweBOXbtZtjVdaQHaHa?pid=ImgDet&rs=1" alt="" />
+
+      <div className='wholeCard'>
+        <div className="Bcard">
+          <div className="face face1">
+            <div className="Bcontent">
+              <span className="Bstars"></span>
+              <p className="java">Generation Why</p>
+              <p className="java">Java s.</p>
+            </div>
+          </div>
+          <div className="face face2">
+            <img className="bimg" src="https://tse3.mm.bing.net/th/id/OIP.BAEM18CBhq_K0BgAzm90vwHaHa?pid=ImgDet&rs=1"/>
+        </div>
+        </div>
+
+        <div className="Hcontents">
         <p className='HsongName'>Euphoria</p>
       <p className='Hartist'>Jungkook</p>
-      </div>
-      <div className='Hcover'>
-      <img className='Halbum' src="https://tse3.mm.bing.net/th/id/OIP.cgx8e_7qBmKt8vWTWAqJTgHaHa?pid=ImgDet&rs=1" alt="" />
-      <p className='HsongName'>Shape of you</p>
-      <p className='Hartist'>Ed Sheeran</p>
-      </div>
-      <div className="Hcover">
-      <img className='Halbum' src="https://tse2.mm.bing.net/th/id/OIP.I7A9doba6Gl3aKS5laRELgHaHa?pid=ImgDet&rs=1" alt="" />
-      <p className='HsongName'>Stay for me</p>
-      <p className='Hartist'>Hyuk</p>
-      </div>
-      <div className="Hcover">
-      <img className='Halbum' src="https://tse1.mm.bing.net/th/id/OIP.1ru4hBQdz3brCAQAa5hOPQHaHa?pid=ImgDet&rs=1" alt="" />
-      <p className='HsongName'>We dont talk</p>
-      <p className='Hartist'>Charlie Puth</p>
-      </div>
-      <div className="Hcover">
-      <img className='Halbum' src="https://tse3.mm.bing.net/th/id/OIP.oK1qTqZqVGk7VNUnYhREVwAAAA?pid=ImgDet&rs=1" alt="" />
-      <p className='HsongName'>Love me like you do</p>
-      <p className='Hartist'>Ellie Goulding</p>
-      </div>
-     <div className="Hcover">
-     <img className='Halbum' src="https://tse3.mm.bing.net/th/id/OIP.Lifxh5ZRW5xwtuB4imRRAQHaHa?pid=ImgDet&rs=1" alt="" />
-     <p className='HsongName'>Sunflower</p>
-      <p className='Hartist'>Post Malone</p>
-     </div>
-      <div className="Hcover">
-      <img className='Halbum' src="https://is3-ssl.mzstatic.com/image/thumb/Music126/v4/85/2e/2b/852e2b6c-93ec-806a-95b2-8f5eda2f775c/22UMGIM18886.rgb.jpg/600x600bb.jpg" alt="" />
-      <p className='HsongName'>Matsuri</p>
-      <p className='Hartist'>Fujii Kaze</p>
-      </div>
-      <div className="Hcover">
-      <img className='Halbum' src="https://parade.com/.image/t_share/MTkyMzA2NDQ3NzEzODM4MzE2/taylor-swift-midnights-lavender-edition-cd-target.jpg" alt="" />
-      <p className='HsongName'>Midnight</p>
-      <p className='Hartist'>Taylor Swift</p>
-      </div>
+        </div>
+        </div>
+
+
+        <div className='wholeCard'>
+        <div className="Bcard">
+          <div className="face face1">
+            <div className="Bcontent">
+              <span className="Bstars"></span>
+              <h2 className="python">Python</h2>
+              <p className="python">Python is an.</p>
+            </div>
+          </div>
+          <div className="face face2">
+           <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.EVMQzABbuT_d4dqjhjBBEgHaHa?pid=ImgDet&rs=1" alt="" srcset=""/>
+          </div>
+        </div>
+        <div className="Hcontents">
+        <p className='HsongName'>Euphoria</p>
+      <p className='Hartist'>Jungkook</p>
+        </div>
+        </div>
+      
+
+        <div className='wholeCard'>
+        <div className="Bcard">
+          <div className="face face1">
+            <div className="Bcontent">
+              <span className="Bstars"></span>
+              <h2 className="cSharp">C#</h2>
+              <p className="cSharp">C# is .</p>
+            </div>
+          </div>
+          <div className="face face2">
+            <img className="bimg" src="https://tse3.mm.bing.net/th/id/OIP.wqF7tBXbVYV3aJbynsewVAHaHa?pid=ImgDet&rs=1" alt="" srcset=""/>
+          </div>
+        </div>
+        <div className="Hcontents">
+        <p className='HsongName'>Euphoria</p>
+      <p className='Hartist'>Jungkook</p>
+        </div>
+        </div>
+
+
+
+        
+
+        <div className='wholeCard'>
+        <div className="Bcard">
+          <div className="face face1">
+            <div className="Bcontent">
+              <span className="Bstars"></span>
+              <h2 className="cSharp">C#</h2>
+              <p className="cSharp">C# is .</p>
+            </div>
+          </div>
+          <div className="face face2">
+            <img className="bimg" src="https://i.ytimg.com/vi/OQ6Q_SvO7jw/maxresdefault.jpg" alt="" srcset=""/>
+          </div>
+        </div>
+        <div className="Hcontents">
+        <p className='HsongName'>Euphoria</p>
+      <p className='Hartist'>Jungkook</p>
+        </div>
+        </div>
+
+
+        <div className='wholeCard'>
+        <div className="Bcard">
+          <div className="face face1">
+            <div className="Bcontent">
+              <span className="Bstars"></span>
+              <h2 className="cSharp">C#</h2>
+              <p className="cSharp">C# is .</p>
+            </div>
+          </div>
+          <div className="face face2">
+            <img className="bimg" src="https://images.genius.com/98c4c2bd9bbc3b28ec347e0f35e68ddd.1000x1000x1.jpg" alt="" srcset=""/>
+          </div>
+        </div>
+        <div className="Hcontents">
+        <p className='HsongName'>Euphoria</p>
+      <p className='Hartist'>Jungkook</p>
+        </div>
+        </div>
+      
     </div>
     <div className="HalbumNames">
 
     </div>
    </div>
+
   )
 }
 

@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "Username": "Swetha321@gmail.com",
+      "password": "root123",
+      "id": 1
+    },
+    {
+      "Username": "",
+      "password": "b n",
+      "id": 2
+    },
+    {
+      "Useremail": "swethababu463@gmail.com",
+      "firstName": "Swetha",
+      "lastName": "Thekepurayil",
+      "password": "sss22",
+      "id": 3
+    }
+  ],
+  "music": []
+}

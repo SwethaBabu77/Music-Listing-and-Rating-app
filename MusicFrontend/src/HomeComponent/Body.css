@@ -12,7 +12,7 @@
 .HomebodyInfo {
   display: flex;
   justify-content: center;
-  height: 12rem;
+  height: 13rem;
 }
 
 .Homehr {
@@ -25,8 +25,8 @@
 
 .Hcard {
   position: absolute;
-  width: 47%;
-  height: 12rem;
+  width: 52%;
+  height: 14rem;
   left: 0;
   right: 0;
   margin: auto;
@@ -92,6 +92,25 @@
 .Halbumtitles {
   margin-left: 24px;
   line-height: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 26px;
+}
+.seeAll{
+  margin-right: 35px;
+  
+}
+
+.SeeAllp{
+  color: #24ab74;
+  font-size: 18px;
+}
+
+.Hfeatures{
+  display: flex;
+  flex-direction: column;
 }
 
 .Halbumtitles > p {
@@ -112,20 +131,14 @@
   margin: 2rem;
 }
 
-.Hcover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-inline: 10px;
-}
-
 .HsongName {
-  margin-bottom: 1px;
-  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 16px;
 }
 
 .Hartist {
-  font-size: 11px;
+  font-size: 13px;
   color: grey;
 }
 
@@ -142,15 +155,7 @@
     width: 90%;
   }
 
-  .HalbumList {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1rem;
-  }
-
-  .Hcover {
-    margin: 0.5rem;
-  }
+ 
 }
 
 /* Responsive styles for mobile devices */
@@ -162,31 +167,8 @@
     align-items: center;
   }
 
-  .Hcard {
-    width: 100%;
-  }
 
-  .Hcards {
-    position: relative; /* Add this property */
-    height: 180px; /* Adjust the height as needed */
-    overflow: hidden; /* Add this property */
-  }
 
-  .HalbumList {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1rem;
-  }
-
-  .Hcover {
-    margin: 0.5rem;
-    width: 100%; /* Add this property */
-  }
-
-  .Halbum {
-    height: auto; /* Change height to auto */
-    width: 100%; /* Add this property */
-  }
 
   .HsongName {
     font-size: 14px;
@@ -195,4 +177,94 @@
   .Hartist {
     font-size: 13px;
   }
+}
+
+.wholeCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 31px;
+}
+
+
+.Bcard {
+  position: relative;
+  width: 158px;
+  height: 196px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.Bcard .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bcard .face.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.Bcard .face.face1 h2 {
+  margin: 0;
+  padding: 0;
+}
+.bimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Bcard .face.face1 .java {
+  background-color: #fffc00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Bcard .face.face1 .python {
+  background-color: #00fffc;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Bcard .face.face1 .cSharp {
+  background-color: #fc00ff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Bcard .face.face2 {
+  transition: 0.5s;
+}
+
+.Bcard .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.Bcard:hover .face.face2 {
+  height: 20px;
+}
+
+.Bcard:hover .face.face2 h2 {
+  font-size: 2em;
+}
+
+.Hcontents{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
