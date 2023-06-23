@@ -19,15 +19,17 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 
-.headerLeft > input{
+.searchmusix{
     border: none;
-    width: 100%;
+    width: 25rem;
 }
 
-.headerRight{
+.headerRight{    
+    margin-block:18px;
     margin-right: 3rem;
     display: flex;
     align-items: center;

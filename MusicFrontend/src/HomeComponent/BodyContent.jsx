@@ -1,7 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Body.css'
-function BodyContent() {
+function BodyContent(props) {
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
         <div>
             <div className="HomebodyInfo">
@@ -9,6 +22,7 @@ function BodyContent() {
                     <input className="Hradios" type="radio" name="slider" id="item-1" defaultChecked />
                     <input className="Hradios" type="radio" name="slider" id="item-2" />
                     <input className="Hradios" type="radio" name="slider" id="item-3" />
+
                     <div className="Hcards">
                         <label className="Hcard" htmlFor="item-1" id="song-1">
                             <img className='HomeSongImg' src="/src/assets/aintme.jpg" alt="song" />
@@ -34,10 +48,10 @@ function BodyContent() {
                     </div>
                 </Link>
             </div>
-            <div className="HalbumList">
 
+            <div className="HalbumList">
                 <div className='wholeCard'>
-                    <div className="Bcard">
+                    <div className="Bcard" onClick={()=>play(props.set(1))}>
                         <div className="face face1">
                             <div className="Bcontent">
                                 <span className="Bstars"></span>
@@ -138,6 +152,9 @@ function BodyContent() {
                         <p className='Hartist'>Jungkook</p>
                     </div>
                 </div>
+
+
+                
 
             </div>
             <div className="HalbumNames">

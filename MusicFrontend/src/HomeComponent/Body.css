@@ -1,5 +1,4 @@
 .Homebody {
-  flex: 0.8;
   align-items: center;
   justify-content: center;
   font-family: 'DM Sans', sans-serif;
@@ -7,6 +6,8 @@
   background-color: rgb(14, 14, 14);
   color: white;
   border-top-right-radius: 12px;
+  height: 100vh;
+  width: 81rem;
 }
 
 .HomebodyInfo {
@@ -129,7 +130,8 @@
 .HalbumList {
   display: flex;
   flex-direction: row;
-  margin: 2rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
 }
 
 .HsongName {

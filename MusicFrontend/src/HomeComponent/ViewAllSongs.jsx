@@ -6,7 +6,6 @@ function ViewAllSongs() {
             <div className="HomebodyInfo">
                 <div className='viewCard'>
 
-
                     <div className='wholeCard'>
                         <div className="Bcard">
                             <div className="face face1">
@@ -20,7 +19,6 @@ function ViewAllSongs() {
                                 <img className="bimg" src="https://tse3.mm.bing.net/th/id/OIP.QuPGm1KvwhTqvOXm2D5F-wHaHa?pid=ImgDet&rs=1" />
                             </div>
                         </div>
-
                         <div className="Hcontents">
                             <p className='HsongName'>Euphoria</p>
                             <p className='Hartist'>Jungkook</p>
@@ -40,12 +38,12 @@ function ViewAllSongs() {
                                 <img className="bimg" src="https://tse1.mm.bing.net/th/id/OIP.sed5qBSzYJ34xeLSjFgGTAAAAA?pid=ImgDet&rs=1" />
                             </div>
                         </div>
-
                         <div className="Hcontents">
                             <p className='HsongName'>Euphoria</p>
                             <p className='Hartist'>Jungkook</p>
                         </div>
                     </div>
+
 
                     <div className='wholeCard'>
                         <div className="Bcard">
@@ -141,7 +139,7 @@ function ViewAllSongs() {
                                 </div>
                             </div>
                             <div className="face face2">
-                                <img className="bimg" src="https://i1.sndcdn.com/artworks-KUt87jtGdlyk-0-t500x500.jpg" />
+                                <img className="bimg" src="https://t2.genius.com/unsafe/600x600/https://images.genius.com/70f4dfc8c7a17b9f0368ba5c667aa423.1000x1000x1.jpg" />
                             </div>
                         </div>
 

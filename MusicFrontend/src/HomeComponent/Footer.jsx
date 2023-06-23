@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faPause, faCirclePlay, faShuffle, faBackwardStep, faForwardStep, faVolumeLow } from '@fortawesome/free-solid-svg-icons'
-function Footer() {
+function Footer(props) {
 
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
@@ -11,7 +11,8 @@ function Footer() {
   const songs = ['/src/assets/Midnight Rain - Taylor Swift.m4a','/src/assets/Six Days (Remix) (feat. Mos Def) - DJ Shadow.m4a','/src/assets/deja vu - Olivia Rodrigo.m4a', '/src/assets/Back To December - Taylor Swift.m4a', '/src/assets/Calm Down (Remix) - Dj Luli Torres.m4a', '/src/assets/Soundtrack) - Teriyaki Boyz.m4a']; // Replace with your song URLs
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [rating, setRating] = useState(0);
-
+  
+  
   const togglePlay = () => {
     if (!audioRef.current) return;
 
@@ -63,7 +64,7 @@ function Footer() {
       setRating(ratingValue);
     }
   };
-
+  // setCurrentSongIndex(props.pro)
 
   const handleVolumeChange = (e) => {
     const newVolume = parseFloat(e.target.value);

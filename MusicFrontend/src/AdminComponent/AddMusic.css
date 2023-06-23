@@ -2,7 +2,7 @@
   margin-left: 5rem;
   width: 100%;
   max-width: 63rem;
-  height: 87vh;
+  height: 77vh;
   margin-right: 1rem;
   margin-bottom: 14px;
   padding: 13px;
@@ -63,10 +63,6 @@
     z-index: -1;
 }
 
-.formdiv{
-
-}
-
 
 .Inlineform{
   display: flex;
@@ -115,4 +111,11 @@
 display: flex;
 flex-direction: column;
 margin-bottom: 12px;
+}
+
+.addmusicsub{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 23px;
 }

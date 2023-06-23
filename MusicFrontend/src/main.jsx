@@ -12,10 +12,16 @@ import ViewAllMusic from './AdminComponent/ViewAllMusic';
 import EditMusic from './AdminComponent/EditMusic';
 import DeleteMusic from './AdminComponent/DeleteMusic';
 import AllSongs from './HomeComponent/AllSongs'
+import Search from './HomeComponent/Search';
+import UserAccount from './HomeComponent/UserAccount';
+import UserEditdetails from './HomeComponent/UserEditdetails';
 
 function App(){
+ 
   return(
     <>
+
+     
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Landing/>}/>
@@ -25,6 +31,9 @@ function App(){
       <Route path="/Home">
       <Route index element={<Home/>}/>
       <Route path="/Home/AllSongs" element={<AllSongs/>}/>
+      <Route path="/Home/Search" element={<Search/>}/>
+      <Route path="/Home/User" element={<UserAccount/>}/>
+      <Route path="/Home/EditDetails" element={<UserEditdetails/>}/>
       </Route>
 
       <Route path="/Admin">
@@ -37,7 +46,7 @@ function App(){
 
     </Routes>
     </BrowserRouter>
-    </>
+        </>
   )
 }
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import NavHome from './NavHome'
 import './AdminHome'
 import './AddMusic.css'
+import axios from 'axios';
 function AddMusic() {
 
   const [musicName, setMusicName] = useState('');
@@ -17,7 +18,24 @@ function AddMusic() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    // Perform form submission logic, such as saving the data or making an API call
+    const payload={
+      musicName,
+      artistName,
+      musicGenre,
+      songLanguage,
+      songReleaseDate,
+      duration,
+      country,
+      overallRate,
+      imageUrl
+    }
+
+    axios.post('https://localhost:9090/addAMusic',payload).then(response=>{
+      console.log(response.data);
+    })
+    .catch(error=>{
+      console.error(error);
+    })
 
     // Reset form fields
     setMusicName('');
@@ -46,6 +64,7 @@ function AddMusic() {
               <input className='AddmusicInput'
                 type="text"
                 id="musicName"
+                name='musicName'
                 value={musicName}
                 onChange={(e) => setMusicName(e.target.value)}
                 required
@@ -157,7 +176,7 @@ function AddMusic() {
           </div>
 
 
-          <div>
+          <div className='addmusicsub'>
             <button className='upload' type="submit">Submit</button>
           </div>
 

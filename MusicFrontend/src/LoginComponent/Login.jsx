@@ -3,11 +3,13 @@ import './style.css';
 import video from '../assets/pexels-lui-smither-2531140-1920x1080-24fps.mp4';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Loaders from '../Loaders';
 function Login() {
   const [userName, setUsername] = useState('');
   const [userPassword, setPassword] = useState('');
   const [usernameError, setUsernameError] = useState('');
   const [passwordError, setPasswordError] = useState('');
+  
   const navigate = useNavigate();
 
   const adminCredentials = {
@@ -30,6 +32,8 @@ function Login() {
       userName:userName,
       userPassword:userPassword
     }
+
+    
     axios.post('http://localhost:9090/authenticate',payload).then((response)=>{
       if(response.status === 200){
         const userType= response.data.userType;
@@ -84,7 +88,12 @@ function Login() {
     return isValid;
   }
 
+
+ 
+
+
   return (
+    
     <div className="Lomain">
       <video className="video-background" autoPlay loop muted>
         <source src={video} type="video/mp4" />
@@ -95,6 +104,7 @@ function Login() {
 
       <div className="Losession">
         <div className="Loleft"></div>
+        
         <form action="" className="login" autoComplete="off" onSubmit={handleLogin}>
           <h4 className="h4Lo">
             We are <span>MUZIX</span>
@@ -139,7 +149,9 @@ function Login() {
             Log in
           </button>
         </form>
+
       </div>
+      
     </div>
   );
 }

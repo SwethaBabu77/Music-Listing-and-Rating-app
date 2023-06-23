@@ -1,4 +1,4 @@
-.sidebar {
+/* .sidebar {
   height: 100vh;
   flex: 0.2;
   color: aliceblue;
@@ -13,10 +13,10 @@
 .sidebarLogo {
   height: 70px;
   object-fit: contain;
-}
+} */
 
-@media screen and (max-width: 768px) {
-  /* Styles for screens with a maximum width of 768px */
+/* @media screen and (max-width: 768px) {
+  
   .sidebar {
     flex: 0.3;
     min-width: 150px;
@@ -25,10 +25,10 @@
   .sidebarLogo {
     height: 50px;
   }
-}
+} */
 
-@media screen and (max-width: 480px) {
-  /* Styles for screens with a maximum width of 480px */
+/* @media screen and (max-width: 480px) {
+  
   .sidebar {
     flex: 0.4;
     min-width: 100px;
@@ -37,5 +37,194 @@
   
   .sidebarLogo {
     height: 40px;
+  }
+} */
+.sidebar{
+  /* position: fixed;  */
+    top: 0;
+    /* z-index: 1; */
+    left: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: flex-start;
+    width:240px;
+    background: black;
+    padding: 11px 10px 30px 10px;
+    /* border-right: 1px solid #2f3336;*/
+}
+
+.sidebar-header{
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* .logo-img{
+  width: 32px;
+  margin-left: 10px;
+  
+}
+.logo-img{
+  height:5rem;
+} */
+.sidebar button{
+  height: 60px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar button>span{
+  display: inline-flex;
+  align-items: center;
+  gap:12px;
+  height:48px;
+  padding: 0 16px 0 12px;
+  border-radius: 24px;
+  line-height: 1;
+}
+
+.home{
+  display: flex;
+}
+
+.sidebar button:hover >span{
+  background: #20ad72;
+  color: black;
+}
+
+.sidebar button i{
+  position: relative;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+.sidebarLogo{
+  height:5rem;
+}
+
+.sidebar button i >span{
+  display: grid;
+  place-items:center;
+  padding:2px 5px;
+  position:absolute;
+  top:-5px;
+  left:50%;
+  translate:-50% 0;
+  background: #1d9bf0;
+  color:#f9f9f9;
+  font-size: 10px;
+  font-style:normal;
+}
+
+.sidebar >nav{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar>nav button:last-child{
+  margin-top: auto;
+}
+
+button.search-button{
+  text-align: center;
+}
+
+button.search-button > span{
+  color:rgb(199, 199, 199);
+  font-size: 20px;
+ 
+  justify-content: center;
+}
+
+button.search-button i{
+  display: none;
+}
+
+button.search-button span >span{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+button.Homebutton{
+  text-align: center;
+}
+
+button.Homebutton > span{
+  color:rgb(199, 199, 199);
+  font-size: 20px;
+ 
+  justify-content: center;
+}
+
+button.Homebutton i{
+  display: none;
+}
+
+button.Homebutton span >span{
+  display: block;
+}
+
+
+button.Account-button{
+  text-align: center;
+}
+
+button.Account-button > span{
+  color:rgb(199, 199, 199);
+    font-size: 20px;
+   
+  justify-content: center;
+}
+
+button.Account-button i{
+  display: none;
+}
+
+button.Account-button span >span{
+  display: block;
+}
+
+@media (width<580px) {
+  .sidebar{
+    width: 72px;  
+  }
+  .sidebar button>span{
+    width: 50px;
+  }
+
+  .sidebar button > span > span{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  button.search-button i{
+    display: inline-flex;
+  }
+  button.search-button span>span{
+    display: none;
+  }
+
+  button.Homebutton i{
+    display: inline-flex;
+  }
+  button.Homebutton span>span{
+    display: none;
+  }
+
+  button.Account-button i{
+    display: inline-flex;
+  }
+  button.Account-button span>span{
+    display: none;
   }
 }

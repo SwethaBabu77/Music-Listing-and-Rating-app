@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import NavHome from './NavHome'
 import './AdminHome'
 import './AddMusic.css'
+import axios from 'axios';
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 function EditMusic() {
+    const [musicData, setMusicData] = useState(null);
     const [musicName, setMusicName] = useState('');
     const [artistName, setArtistName] = useState('');
     const [musicGenre, setMusicGenre] = useState('');
@@ -14,11 +17,48 @@ function EditMusic() {
     const [country, setCountry] = useState('');
     const [overallRate, setOverallRate] = useState('');
     const [imageUrl, setimageUrl] = useState('');
+    const [loading,setLoading]=useState(false);
+    const [musicId, setMusicId] = useState('');
+
+    useEffect(() => {
+        if (musicId) {
+          setLoading(true);
+          axios
+            .get(`https://localhost:9090/${musicId}`)
+            .then(response => {
+              setMusicData(response.data);
+              setLoading(false);
+            })
+            .catch(error => {
+              console.error(error);
+              setLoading(false);
+            });
+        }
+      }, [musicId]);
 
     function handleSubmit(event) {
         event.preventDefault();
 
         // Perform form submission logic, such as saving the data or making an API call
+        const updatedMusicData = {
+            musicName,
+            artistName,
+            musicGenre,
+            songReleaseDate,
+            songLanguage,
+            duration,
+            country,
+            overallRate,
+            imageUrl
+          };
+
+
+          axios
+      .post(`https://localhost:9090/${musicId}`, updatedMusicData)
+      .then(response => {
+        // Handle the success response here
+        console.log('Music details updated successfully');
+        setMusicData(response.data);
 
         // Reset form fields
         setMusicName('');
@@ -30,6 +70,11 @@ function EditMusic() {
         setCountry('');
         setOverallRate('');
         setimageUrl('');
+      })
+      .catch(error => {
+        // Handle the error here
+        console.error(error);
+      });
     }
 
 
@@ -60,6 +105,7 @@ function EditMusic() {
                                     id="musicName"
                                     value={musicName}
                                     onChange={(e) => setMusicName(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -70,6 +116,7 @@ function EditMusic() {
                                     id="artistName"
                                     value={artistName}
                                     onChange={(e) => setArtistName(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -84,6 +131,7 @@ function EditMusic() {
                                     id="musicGenre"
                                     value={musicGenre}
                                     onChange={(e) => setMusicGenre(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -94,6 +142,7 @@ function EditMusic() {
                                     id="songReleaseDate"
                                     value={songReleaseDate}
                                     onChange={(e) => setSongReleaseDate(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -108,6 +157,7 @@ function EditMusic() {
                                     id="songLanguage"
                                     value={songLanguage}
                                     onChange={(e) => setSongLanguage(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -118,6 +168,7 @@ function EditMusic() {
                                     id="duration"
                                     value={duration}
                                     onChange={(e) => setDuration(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -132,6 +183,7 @@ function EditMusic() {
                                     id="country"
                                     value={country}
                                     onChange={(e) => setCountry(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -142,6 +194,7 @@ function EditMusic() {
                                     id="overallRate"
                                     value={overallRate}
                                     onChange={(e) => setOverallRate(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
@@ -161,6 +214,7 @@ function EditMusic() {
                                     id="imageUrl"
                                     value={imageUrl}
                                     onChange={(e) => setimageUrl(e.target.value)}
+                                    defaultValue={musicData ? musicData.musicName: ''}
                                     required
                                 />
                             </div>
