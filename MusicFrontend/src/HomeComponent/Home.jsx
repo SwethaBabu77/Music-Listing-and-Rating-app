@@ -20,7 +20,7 @@ function Home() {
   }, []);
 
   return (
-    <div className={`home ${loading ? 'blurred' : ''}`}>
+    <div>
       {loading &&<Loaders />}
         <div className="player">
           <div className="playerBody">

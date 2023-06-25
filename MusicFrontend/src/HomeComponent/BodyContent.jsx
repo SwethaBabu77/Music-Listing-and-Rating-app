@@ -4,17 +4,6 @@ import './Body.css'
 function BodyContent(props) {
 
 
-
-
-
-
-
-
-
-
-
-
-
     return (
         <div>
             <div className="HomebodyInfo">
@@ -152,6 +141,11 @@ function BodyContent(props) {
                         <p className='Hartist'>Jungkook</p>
                     </div>
                 </div>
+
+
+                
+
+                
 
 
                 

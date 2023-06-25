@@ -3,9 +3,8 @@ import NavHome from './NavHome'
 import './AdminHome'
 import './AddMusic.css'
 import axios from 'axios';
+import Loaders from '../Loaders';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 function EditMusic() {
     const [musicData, setMusicData] = useState(null);
     const [musicName, setMusicName] = useState('');
@@ -17,24 +16,24 @@ function EditMusic() {
     const [country, setCountry] = useState('');
     const [overallRate, setOverallRate] = useState('');
     const [imageUrl, setimageUrl] = useState('');
-    const [loading,setLoading]=useState(false);
+    const [loading, setLoading] = useState(false);
     const [musicId, setMusicId] = useState('');
 
     useEffect(() => {
         if (musicId) {
-          setLoading(true);
-          axios
-            .get(`https://localhost:9090/${musicId}`)
-            .then(response => {
-              setMusicData(response.data);
-              setLoading(false);
-            })
-            .catch(error => {
-              console.error(error);
-              setLoading(false);
-            });
+            setLoading(true);
+            axios
+                .get(`https://localhost:9090/get/${musicId}`)
+                .then(response => {
+                    setMusicData(response.data);
+                    setLoading(false);
+                })
+                .catch(error => {
+                    console.error(error);
+                    setLoading(false);
+                });
         }
-      }, [musicId]);
+    }, [musicId]);
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -50,36 +49,28 @@ function EditMusic() {
             country,
             overallRate,
             imageUrl
-          };
+        };
 
-
-          axios
-      .post(`https://localhost:9090/${musicId}`, updatedMusicData)
-      .then(response => {
-        // Handle the success response here
-        console.log('Music details updated successfully');
-        setMusicData(response.data);
-
-        // Reset form fields
-        setMusicName('');
-        setArtistName('');
-        setMusicGenre('');
-        setSongReleaseDate('');
-        setSongLanguage('');
-        setDuration('');
-        setCountry('');
-        setOverallRate('');
-        setimageUrl('');
-      })
-      .catch(error => {
-        // Handle the error here
-        console.error(error);
-      });
+        axios.post(`https://localhost:9090/updateAMusic/${musicId}`, updatedMusicData)
+            .then(response => {
+                // Handle the success response here
+                console.log('Music details updated successfully');
+                setMusicData(response.data);
+                setLoading(false);
+            }).catch(error => {
+                // Handle the error here
+                console.error(error);
+                setLoading(false);
+            });
     }
+
+    // Reset form fields
+
 
 
     return (
         <div className='whole1'>
+            {loading && <Loaders/>}
             <NavHome />
             <div>
                 <div className="card2">
@@ -90,7 +81,8 @@ function EditMusic() {
                     <div className="SearchMusic">
                         <div className="box">
                             <form className="searchmusix">
-                                <input type="text" class="input" Classname="txt" onMouseOut="this.value = ''; this.blur();" />
+                                <input type="text" class="input" Classname="txt" onChange={(e) => setMusicId(e.target.value)} value={musicId} />
+                                <button>Submit</button>
                             </form>
                         </div>
                     </div>
@@ -105,7 +97,7 @@ function EditMusic() {
                                     id="musicName"
                                     value={musicName}
                                     onChange={(e) => setMusicName(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.musicName : ''}
                                     required
                                 />
                             </div>
@@ -116,7 +108,7 @@ function EditMusic() {
                                     id="artistName"
                                     value={artistName}
                                     onChange={(e) => setArtistName(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.artistName : ''}
                                     required
                                 />
                             </div>
@@ -131,7 +123,7 @@ function EditMusic() {
                                     id="musicGenre"
                                     value={musicGenre}
                                     onChange={(e) => setMusicGenre(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.musicGenre : ''}
                                     required
                                 />
                             </div>
@@ -142,7 +134,7 @@ function EditMusic() {
                                     id="songReleaseDate"
                                     value={songReleaseDate}
                                     onChange={(e) => setSongReleaseDate(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.songReleaseDate : ''}
                                     required
                                 />
                             </div>
@@ -157,7 +149,7 @@ function EditMusic() {
                                     id="songLanguage"
                                     value={songLanguage}
                                     onChange={(e) => setSongLanguage(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.songLanguage : ''}
                                     required
                                 />
                             </div>
@@ -168,7 +160,7 @@ function EditMusic() {
                                     id="duration"
                                     value={duration}
                                     onChange={(e) => setDuration(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.duration : ''}
                                     required
                                 />
                             </div>
@@ -183,7 +175,7 @@ function EditMusic() {
                                     id="country"
                                     value={country}
                                     onChange={(e) => setCountry(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.country : ''}
                                     required
                                 />
                             </div>
@@ -194,7 +186,7 @@ function EditMusic() {
                                     id="overallRate"
                                     value={overallRate}
                                     onChange={(e) => setOverallRate(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.overallRate : ''}
                                     required
                                 />
                             </div>
@@ -214,7 +206,7 @@ function EditMusic() {
                                     id="imageUrl"
                                     value={imageUrl}
                                     onChange={(e) => setimageUrl(e.target.value)}
-                                    defaultValue={musicData ? musicData.musicName: ''}
+                                    defaultValue={musicData ? musicData.imageUrl : ''}
                                     required
                                 />
                             </div>

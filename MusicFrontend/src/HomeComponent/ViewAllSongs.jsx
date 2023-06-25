@@ -3,7 +3,7 @@ import './ViewAllSongs.css'
 function ViewAllSongs() {
     return (
         <div className="Homebody">
-            <div className="HomebodyInfo">
+            <div className="HomebodyInfos">
                 <div className='viewCard'>
 
                     <div className='wholeCard'>
@@ -215,6 +215,124 @@ function ViewAllSongs() {
                         </div>
                     </div>
 
+
+
+                    <div className='wholeCard'>
+                        <div className="Bcard">
+                            <div className="face face1">
+                                <div className="Bcontent">
+                                    <span className="Bstars"></span>
+                                    <p className="java">Generation Why</p>
+                                    <p className="java">Java s.</p>
+                                </div>
+                            </div>
+                            <div className="face face2">
+                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                            </div>
+                        </div>
+
+                        <div className="Hcontents">
+                            <p className='HsongName'>Euphoria</p>
+                            <p className='Hartist'>Jungkook</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div className='wholeCard'>
+                        <div className="Bcard">
+                            <div className="face face1">
+                                <div className="Bcontent">
+                                    <span className="Bstars"></span>
+                                    <p className="java">Generation Why</p>
+                                    <p className="java">Java s.</p>
+                                </div>
+                            </div>
+                            <div className="face face2">
+                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                            </div>
+                        </div>
+
+                        <div className="Hcontents">
+                            <p className='HsongName'>Euphoria</p>
+                            <p className='Hartist'>Jungkook</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div className='wholeCard'>
+                        <div className="Bcard">
+                            <div className="face face1">
+                                <div className="Bcontent">
+                                    <span className="Bstars"></span>
+                                    <p className="java">Generation Why</p>
+                                    <p className="java">Java s.</p>
+                                </div>
+                            </div>
+                            <div className="face face2">
+                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                            </div>
+                        </div>
+
+                        <div className="Hcontents">
+                            <p className='HsongName'>Euphoria</p>
+                            <p className='Hartist'>Jungkook</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div className='wholeCard'>
+                        <div className="Bcard">
+                            <div className="face face1">
+                                <div className="Bcontent">
+                                    <span className="Bstars"></span>
+                                    <p className="java">Generation Why</p>
+                                    <p className="java">Java s.</p>
+                                </div>
+                            </div>
+                            <div className="face face2">
+                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                            </div>
+                        </div>
+
+                        <div className="Hcontents">
+                            <p className='HsongName'>Euphoria</p>
+                            <p className='Hartist'>Jungkook</p>
+                        </div>
+                    </div>
+
+
+
+                    <div className='wholeCard'>
+                        <div className="Bcard">
+                            <div className="face face1">
+                                <div className="Bcontent">
+                                    <span className="Bstars"></span>
+                                    <p className="java">Generation Why</p>
+                                    <p className="java">Java s.</p>
+                                </div>
+                            </div>
+                            <div className="face face2">
+                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                            </div>
+                        </div>
+
+                        <div className="Hcontents">
+                            <p className='HsongName'>Euphoria</p>
+                            <p className='Hartist'>Jungkook</p>
+                        </div>
+                    </div>
+
                 
 
 
@@ -225,6 +343,7 @@ function ViewAllSongs() {
 
                 
             </div>
+            
         </div>
     )
 }

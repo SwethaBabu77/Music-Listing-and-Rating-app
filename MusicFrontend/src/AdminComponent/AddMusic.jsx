@@ -180,9 +180,6 @@ function AddMusic() {
             <button className='upload' type="submit">Submit</button>
           </div>
 
-
-
-
         </form>
 
       </div>
