@@ -23,15 +23,13 @@ function Header() {
 
   const handleDropdownChange = (e) => {
     const selectedOption = e.target.value;
-    // Perform any necessary actions based on the selected option
+
     if (selectedOption === "logout") {
-      // perform logout action, such as removing user session data
-      // redirect to landing page
+
       setMessage("Log out successfully")
       setIsLoggedOut(true);
 
       navigate('/')
-      // window.location.href = "/";
     }
   };
 
@@ -67,7 +65,7 @@ function Header() {
         </div>
         <Link className="link" to="/Home/User"></Link>
       </div>
-      {}
+      
     </div>
   );
 }

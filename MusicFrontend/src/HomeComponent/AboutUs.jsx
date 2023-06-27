@@ -7,7 +7,7 @@ function AboutUs() {
   return (
              
           <>
-            <Button onClick={onToggle}>Click Me</Button>
+            {/* <Button onClick={onToggle}>Click Me</Button> */}
             <Slide direction='bottom' in={isOpen} style={{ zIndex: 10 }}>
               <Box
                 p='40px'

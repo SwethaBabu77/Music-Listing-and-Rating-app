@@ -39,8 +39,12 @@ function Login() {
       if(response.status === 200){
         const userType= response.data.userType;
         if(userType==='Admin'){
+          setMessage("Login Successful Admin")
+          setIsLoggedOut(true)
           navigate('/Admin');
         }else if(userType==='User'){
+          setMessage("Login Successful")
+          setIsLoggedOut(true)
           navigate('/Home');
         }else{
           setMessage("Invalid user type")
@@ -49,19 +53,22 @@ function Login() {
       }
       else{
         alert('Login failed');
+        setMessage("Login failed")
       }
     })
     .catch(error=>{
       console.log(error);
       setMessage("An error occurred during login")
-      alert("An error occurred during login");
+      // alert("An error occurred during login");
     });
   
 
     if (userName === adminCredentials.userName && userPassword === adminCredentials.userPassword) {
       setMessage("Login Successful Admin")
+      setIsLoggedOut(true)
       // Redirect to admin component
       navigate('/Admin');
+      
     } else if (userName === userCredentials.userName && userPassword === userCredentials.userPassword) {
       // Redirect to user component
       setMessage("Login Successful")
@@ -70,7 +77,7 @@ function Login() {
 
     } else {
       setMessage("Invalid username or password")
-      alert('Invalid username or password');
+      // alert('Invalid username or password');
     }
   }
 

@@ -102,3 +102,22 @@
   display: flex;
   justify-content: center;
 }
+
+.Aright{
+      margin-right: 2rem;
+    margin-top: 6px;
+
+}
+
+.AdminButton{
+  background: #24ab74;
+  border-radius: 12px;
+  padding:.5em 1.5em;
+  margin-top: 1rem;
+  color: #d5d5d5;
+}
+
+.AdminButton:hover{
+  color: white;
+  font-weight: 700;
+}

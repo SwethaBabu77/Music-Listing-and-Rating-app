@@ -10,7 +10,7 @@ import Cards from './Cards'
 
 function Home() {
   const [loading, setLoading] = React.useState(true);
-  const{Message,setMessage,isLoggedOut,setIsLoggedOut}=React.useContext(LogoutContext);
+  const{Message,isLoggedOut,setIsLoggedOut}=React.useContext(LogoutContext);
   // const [ab,setAb]=useState(false)
 
 
