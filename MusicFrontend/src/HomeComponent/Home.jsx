@@ -5,9 +5,14 @@ import Footer from './Footer';
 import './Home.css';
 import Header from './Header';
 import Loaders from '../Loaders';
+import { LogoutContext } from './LogoutContext';
+import Cards from './Cards'
 
 function Home() {
   const [loading, setLoading] = React.useState(true);
+  const{Message,setMessage,isLoggedOut,setIsLoggedOut}=React.useContext(LogoutContext);
+  // const [ab,setAb]=useState(false)
+
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
@@ -22,6 +27,8 @@ function Home() {
   return (
     <div>
       {loading &&<Loaders />}
+      {isLoggedOut && <Cards Message={Message} setIsLoggedOut={setIsLoggedOut}/>}
+
         <div className="player">
           <div className="playerBody">
             <Sidebar />
@@ -29,9 +36,10 @@ function Home() {
             <Body />
             {/* <Body pro={songs} set={setSong}/> */}
           </div>
-          <Footer />
+          <Footer/>
           {/* <Footer pro={song}/> */}
         </div>
+        
     </div>
   );
 }

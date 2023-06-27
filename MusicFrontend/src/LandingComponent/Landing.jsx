@@ -2,9 +2,18 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Landing.css'
 import { Link } from 'react-router-dom';
+import Cards from '../HomeComponent/Cards';
+import { LogoutContext } from '../HomeComponent/LogoutContext';
+
 function Landing() {
+   
+  const {isLoggedOut,setIsLoggedOut,Message} = React.useContext(LogoutContext)
+  
+  
   return (
     <div className='LandingBody'>
+       {isLoggedOut && <Cards Message={Message} setIsLoggedOut={setIsLoggedOut}/>}
+       {console.log(isLoggedOut)}
        <div className='whole'>
       <div className='LNavbar'>
         <div className='Lleft'>

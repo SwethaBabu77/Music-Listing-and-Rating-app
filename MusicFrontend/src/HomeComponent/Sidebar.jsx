@@ -30,7 +30,7 @@ function Sidebar() {
         <button className='search-button'>
           <span>
             <i><FontAwesomeIcon icon={faMagnifyingGlass} /></i>
-            <span><FontAwesomeIcon icon={faMagnifyingGlass}  /></span><span>Search</span>
+            <span><FontAwesomeIcon icon={faMagnifyingGlass} /></span><span>Search</span>
             
           </span>
         </button>

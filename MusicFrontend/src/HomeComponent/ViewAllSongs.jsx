@@ -227,7 +227,7 @@ function ViewAllSongs() {
                                 </div>
                             </div>
                             <div className="face face2">
-                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                                <img className="bimg" src="https://images.genius.com/2786bb56d27b30276377e1f2486d23e7.455x455x1.jpg" />
                             </div>
                         </div>
 
@@ -252,7 +252,7 @@ function ViewAllSongs() {
                                 </div>
                             </div>
                             <div className="face face2">
-                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                                <img className="bimg" src="https://tse1.mm.bing.net/th/id/OIP.v5i1FslxLHXJLwKz8dTb0wHaHa?pid=ImgDet&rs=1" />
                             </div>
                         </div>
 
@@ -277,7 +277,7 @@ function ViewAllSongs() {
                                 </div>
                             </div>
                             <div className="face face2">
-                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                                <img className="bimg" src="https://images.genius.com/c64d522d377e65b6fced427f210d74ae.1000x1000x1.jpg" />
                             </div>
                         </div>
 
@@ -301,7 +301,7 @@ function ViewAllSongs() {
                                 </div>
                             </div>
                             <div className="face face2">
-                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                                <img className="bimg" src="https://tse4.mm.bing.net/th/id/OIP.KuWGVHFhhj42nfKNJIvXPQHaHa?pid=ImgDet&rs=1" />
                             </div>
                         </div>
 
@@ -323,7 +323,7 @@ function ViewAllSongs() {
                                 </div>
                             </div>
                             <div className="face face2">
-                                <img className="bimg" src="https://tse2.mm.bing.net/th/id/OIP.ZUvws06eKbBXQUN0PRBoxwHaHa?pid=ImgDet&rs=1" />
+                                <img className="bimg" src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2e/e1/cd/2ee1cda3-d138-0e75-58ec-cd0f9abe4661/196626501646.jpg/400x400bb.jpg" />
                             </div>
                         </div>
 

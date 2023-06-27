@@ -68,7 +68,7 @@
   font-weight: 700;
 }
 
-.login p {
+.login > p {
   line-height: 155%;
   margin-bottom: 5px;
   font-size: 14px;

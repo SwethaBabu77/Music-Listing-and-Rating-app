@@ -8,7 +8,6 @@ function Body() {
  
   return (
     <div className="Homebody">
-    <hr className='Homehr'/>
     <BodyContent/>
     {/* <BodyContent pro={props.pro} set={props.set}/> */}
    </div>

@@ -4,12 +4,13 @@ import video from '../assets/pexels-lui-smither-2531140-1920x1080-24fps.mp4';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Loaders from '../Loaders';
+import { LogoutContext } from '../HomeComponent/LogoutContext';
 function Login() {
   const [userName, setUsername] = useState('');
   const [userPassword, setPassword] = useState('');
   const [usernameError, setUsernameError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-  
+  const{setIsLoggedOut,setMessage}=React.useContext(LogoutContext)
   const navigate = useNavigate();
 
   const adminCredentials = {
@@ -42,7 +43,8 @@ function Login() {
         }else if(userType==='User'){
           navigate('/Home');
         }else{
-          alert('Invalid user type');
+          setMessage("Invalid user type")
+          // alert('Invalid user type');
         }
       }
       else{
@@ -51,17 +53,23 @@ function Login() {
     })
     .catch(error=>{
       console.log(error);
+      setMessage("An error occurred during login")
       alert("An error occurred during login");
     });
   
 
     if (userName === adminCredentials.userName && userPassword === adminCredentials.userPassword) {
+      setMessage("Login Successful Admin")
       // Redirect to admin component
       navigate('/Admin');
     } else if (userName === userCredentials.userName && userPassword === userCredentials.userPassword) {
       // Redirect to user component
+      setMessage("Login Successful")
+      setIsLoggedOut(true)
       navigate('/Home');
+
     } else {
+      setMessage("Invalid username or password")
       alert('Invalid username or password');
     }
   }

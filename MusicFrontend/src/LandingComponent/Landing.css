@@ -89,7 +89,7 @@ input:checked + .switch:active::before {
     top: 52%;
     left: 36%;
     transform: translate(-22%, -50%);
-    z-index: 1;
+    /* z-index: 1; */
 
 }
 
@@ -103,7 +103,7 @@ input:checked + .switch:active::before {
     top: 65.5%;
     left: 65%;
     transform: translate(-22%, -50%);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .Lloginn{
@@ -120,7 +120,7 @@ input:checked + .switch:active::before {
     border-radius: 9px;
     left: 73%;
     transform: translate(-22%, -50%);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 
