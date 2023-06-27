@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import "react-dropdown/style.css";
 import "./Header.css";
 import { LogoutContext } from "./LogoutContext";
 import { useNavigate } from "react-router-dom";
 
+
+
 function Header() {
   const [isSearchBarFocused, setIsSearchBarFocused] = useState(false);
   const { setIsLoggedOut,setMessage } = React.useContext(LogoutContext);
-  
+
   const navigate = useNavigate();
 
   const handleSearchBarFocus = () => {
@@ -31,7 +32,11 @@ function Header() {
 
       navigate('/')
     }
+    else if(selectedOption==="myAcc"){
+      navigate('/Home/User')
+    }
   };
+  
 
   return (
     <div className="header">
@@ -58,13 +63,14 @@ function Header() {
         <div className="customDropdown">
           <FontAwesomeIcon icon={faUser} style={{ color: "black" }} />
           <select className="Options" onChange={handleDropdownChange}>
-            <option>Swetha</option>
-            <option value="about">About Us</option>
-            <option value="logout">Log Out</option>
+            <option className="optionuser">Swetha</option>
+            <option className="optionuser" value="myAcc">My Account</option>
+            <option className="optionuser" value="logout">Log Out</option>
           </select>
         </div>
         <Link className="link" to="/Home/User"></Link>
       </div>
+
       
     </div>
   );

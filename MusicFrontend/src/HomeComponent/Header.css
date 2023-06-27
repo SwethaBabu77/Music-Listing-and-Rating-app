@@ -54,7 +54,7 @@
     padding-inline: 11px;
     border-radius: 11px;
     border: 1px solid;
-    background-color: white;
+    background-color: #f2f2f2;
 }
 
 .searchFocused {
@@ -67,3 +67,30 @@
   outline: none;
   box-shadow: none;
 }
+
+.Options {
+    width: 152px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .optionuser {
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .optionuser:hover {
+    background-color: #24ab74;
+  }
+  
+  .optionuser:focus {
+    background-color: #24ab74;
+    outline: none;
+  }
+  

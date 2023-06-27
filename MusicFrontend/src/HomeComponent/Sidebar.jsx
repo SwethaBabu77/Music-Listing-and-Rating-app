@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import SidebarOptions from './SidebarOptions';
 import { faMagnifyingGlass,faHouse,faUser} from '@fortawesome/free-solid-svg-icons'
+import { useDisclosure } from '@chakra-ui/react';
+import AboutUs from './AboutUs';
 
 function Sidebar() {
-
+const { isOpen, onToggle } = useDisclosure()
   return (
     // <div className='sidebar'>
     //   <img className='sidebarLogo' src="/src/assets/muzixlogo.png" alt="MuzixLogo"/>
@@ -36,17 +38,15 @@ function Sidebar() {
         </button>
         </Link>
 
-        <Link to="/Home/User">
-        <button className='Account-button'>
+        <button className='Account-button' onClick={onToggle}>
           <span>
             <i><FontAwesomeIcon icon={faUser} /></i>
-            
-            <span><FontAwesomeIcon icon={faUser} /></span><span>My Account</span>
+            <span><FontAwesomeIcon icon={faUser} /></span><span>About Us</span>
           </span>
         </button>
-        </Link>
 
       </nav>
+        {isOpen && <AboutUs onToggle={onToggle} />}
     </aside>
   )
 }

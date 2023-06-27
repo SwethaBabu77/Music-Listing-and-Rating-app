@@ -10,10 +10,10 @@
     height: 100vh;
   }
 
-  .HomebodyInfo {
+  .HomebodyInfoUser {
     display: flex;
     justify-content: center;
-    height: 13rem;
+    height: 20rem;
     margin-top: 6rem;
   }
 .UserImage{
@@ -23,8 +23,8 @@
 }
 
 .Avatar{
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 87%;
     object-fit: cover;
     z-index: 0;
     border-radius: 59px;
@@ -82,9 +82,82 @@
     padding-inline: 28px;
     padding-block: 12px;
     border-radius: 15px;
+    margin-right: 19px;
+  }
+
+  .userBack{
+    background-color: #eee;
+    color: black;
+    padding-inline: 28px;
+    padding-block: 12px;
+    border-radius: 15px;
   }
 
   .Userfieldsinput:focus .UserfieldsLabel, .Userfieldsinput:valid+.UserfieldsLabel {
     color: #6658d3;
     transform: translateY(-1.5rem);
   }
+
+  .Usercard1 {
+    overflow-y: scroll;
+    position: relative;
+    /* z-index: 1; */
+    top: -24px;
+    margin-inline: 2rem;
+    height: 205px;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 25px;
+    border: 1px solid rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    background-color: rgb(101 90 90 / 45%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+  }
+  .CardSong{
+    
+    height: 60px;
+    /* margin-right: 2rem; */
+    margin-bottom: 1.5rem;
+    /* padding: 25px; */
+    border: 1px solid rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    background-color: rgb(101 90 90 / 45%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+  }
+
+.UserRated{
+  margin-left: 38px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.songRating{
+  padding: 18px;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.UserRatings{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.UserRatings > button {
+  color: #000000;
+  background: none;
+  border:none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+.UserRatings> button.active {
+  color: #24AB74;
+}
+
+.userSong{
+  color: #d6d6d6;
+}
