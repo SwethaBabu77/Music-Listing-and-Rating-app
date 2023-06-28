@@ -17,7 +17,7 @@ const { isOpen, onToggle } = useDisclosure()
 
     <aside className='sidebar'>
       <header className='sidebar-header'>
-      <Link to="/Home"><img className='sidebarLogo' src="/src/assets/logo.png" alt="" srcset="" /></Link>
+      <Link to="/Home"><img className='sidebarLogo' src="/src/assets/logo.png" alt=""/></Link>
       </header>
       <nav>
         <Link to="/Home">

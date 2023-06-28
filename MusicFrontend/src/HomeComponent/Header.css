@@ -1,13 +1,14 @@
 .header{
-    display: flex;
+  display: flex;
     justify-content: space-between;
     margin-bottom: 2px;
     position: absolute;
-    left: 22rem;
+    left: 18rem;
     top: 0;
-    width: 77%;
+    width: 80vw;
     margin-top: 13px;
 }
+
 
 .headerLeft{
     flex: 0.5;
@@ -29,10 +30,12 @@
 }
 
 .headerRight{    
-    margin-block:18px;
-    margin-right: 3rem;
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  height: 24px;
+  width: 67%;
+  margin-top: 11px;
 }
 
 .myname{
@@ -42,7 +45,6 @@
 
 .link{
     text-decoration: none;
-    
 }
 
 .Options{

@@ -5,14 +5,15 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import { LogoutContext } from "./LogoutContext";
 import { useNavigate } from "react-router-dom";
+import SearchContents from "./SearchContents";
 
 
 
 function Header() {
   const [isSearchBarFocused, setIsSearchBarFocused] = useState(false);
   const { setIsLoggedOut,setMessage } = React.useContext(LogoutContext);
-
   const navigate = useNavigate();
+  const[searchQuery,setSearchQuery]=useState("");
 
   const handleSearchBarFocus = () => {
     setIsSearchBarFocused(true);
@@ -22,11 +23,16 @@ function Header() {
     setIsSearchBarFocused(false);
   };
 
+  const handleSearchInputChange=(e)=>{
+    setSearchQuery(e.target.value);
+  }
+
   const handleDropdownChange = (e) => {
     const selectedOption = e.target.value;
 
     if (selectedOption === "logout") {
 
+      localStorage.clear();
       setMessage("Log out successfully")
       setIsLoggedOut(true);
 
@@ -54,6 +60,8 @@ function Header() {
             placeholder="search for songs"
             onFocus={handleSearchBarFocus}
             onBlur={handleSearchBarBlur}
+            value={searchQuery}
+            onChange={handleSearchInputChange}
             name=""
             id=""
           />
@@ -71,7 +79,7 @@ function Header() {
         <Link className="link" to="/Home/User"></Link>
       </div>
 
-      
+      {/* <SearchContents searchQuery={searchQuery}/> */}
     </div>
   );
 }

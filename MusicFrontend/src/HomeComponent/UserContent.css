@@ -1,4 +1,4 @@
-.Homebody {
+.UHomebody {
     flex: 1;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@
     height: 100vh;
   }
 
-  .HomebodyInfoUser {
+  .UHomebodyInfoUser {
     display: flex;
     justify-content: center;
     height: 20rem;

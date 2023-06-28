@@ -26,7 +26,7 @@ function Landing() {
       </div>
       <div className="LContent">
         <div className="Lcontainer1">
-          <img className="LLanding" src="/src/assets/landd.png" alt="" srcset="" />
+          <img className="LLanding" src="/src/assets/landd.png" alt=""/>
           <p className='LBackgroundTitle'>Play the Music</p>
           <h5 className='Lh5'>Let the music be your guide</h5>
           <Link to='/Login' className='Lloginn'>Login</Link>

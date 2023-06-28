@@ -30,17 +30,17 @@ function Register() {
     }
 
     const payload={
-      userName: registerFormData.userName,
-      userFirstName: registerFormData.userFirstName,
-      userLastName: registerFormData.userLastName,
-      userPassword: registerFormData.userPassword
+      "userName": registerFormData.userName,
+      "userFirstName": registerFormData.userFirstName,
+      "userLastName": registerFormData.userLastName,
+      "userPassword": registerFormData.userPassword
     }
     
 
-    axios.post('http://localhost:9090/registerNewUser',payload).then(
+    axios.post('http://localhost:8085/api/auth/registerNewUser',payload).then(
       response=>{
-        console.log(response.status)
-        if(response.status==201){
+        console.log(response)
+        if(response.status===200){
           console.log("User registration")
           setUserCreated(true)
         }

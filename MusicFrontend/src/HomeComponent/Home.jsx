@@ -7,6 +7,7 @@ import Header from './Header';
 import Loaders from '../Loaders';
 import { LogoutContext } from './LogoutContext';
 import Cards from './Cards'
+import axios from 'axios';
 
 function Home() {
   const [loading, setLoading] = React.useState(true);
@@ -15,6 +16,23 @@ function Home() {
 
 
   React.useEffect(() => {
+    const payload = {
+      method: "GET",
+      url: "http://localhost:8085/api/auth/forUser",
+      headers:{
+        "Authorization":"Bearer "+localStorage.getItem("token")
+      }
+    };
+
+
+    axios.request(payload).then(response=>{
+      console.log(response.data)
+    }).catch(error=>{
+      console.log(error)
+    })
+
+
+    
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);

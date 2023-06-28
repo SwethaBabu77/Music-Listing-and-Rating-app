@@ -72,8 +72,8 @@ function UserEditdetails() {
       <div className="playerBody">
         <Sidebar />
         <Header />
-        <div className="Homebody">
-          <div className="HomebodyInfo">
+        <div className="UHomebody">
+          <div className="UHomebodyInfoUser">
             <div className="Users">
               <div className="UserImage">
                 <img

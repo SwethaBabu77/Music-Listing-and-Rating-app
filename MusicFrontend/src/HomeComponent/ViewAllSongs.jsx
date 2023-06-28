@@ -2,8 +2,8 @@ import React from 'react'
 import './ViewAllSongs.css'
 function ViewAllSongs() {
     return (
-        <div className="Homebody">
-            <div className="HomebodyInfos">
+        <div className="VHomebody">
+            <div className="VHomebodyInfos">
                 <div className='viewCard'>
 
                     <div className='wholeCard'>

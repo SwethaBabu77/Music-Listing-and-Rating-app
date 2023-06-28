@@ -19,11 +19,11 @@ function UserContents() {
   };
 
   return (
-    <div className="Homebody">
+    <div className="UHomebody">
       {isLoggedOut && (
         <Cards Message={Message} setIsLoggedOut={setIsLoggedOut} />
       )}
-      <div className="HomebodyInfoUser">
+      <div className="UHomebodyInfoUser">
         <div className="Users">
           <div className="UserImage">
             <img className="Avatar" src="/src/assets/Avatar.png" alt="Avatar" />

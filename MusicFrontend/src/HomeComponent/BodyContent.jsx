@@ -136,7 +136,7 @@ function BodyContent(props) {
                 className="bimg"
                 src="https://tse2.mm.bing.net/th/id/OIP.EVMQzABbuT_d4dqjhjBBEgHaHa?pid=ImgDet&rs=1"
                 alt=""
-                srcset=""
+                
               />
             </div>
           </div>
@@ -176,7 +176,7 @@ function BodyContent(props) {
                 className="bimg"
                 src="https://tse3.mm.bing.net/th/id/OIP.wqF7tBXbVYV3aJbynsewVAHaHa?pid=ImgDet&rs=1"
                 alt=""
-                srcset=""
+                
               />
             </div>
           </div>
@@ -216,7 +216,7 @@ function BodyContent(props) {
                 className="bimg"
                 src="https://i.ytimg.com/vi/OQ6Q_SvO7jw/maxresdefault.jpg"
                 alt=""
-                srcset=""
+                
               />
             </div>
           </div>
@@ -256,7 +256,7 @@ function BodyContent(props) {
                 className="bimg"
                 src="https://images.genius.com/98c4c2bd9bbc3b28ec347e0f35e68ddd.1000x1000x1.jpg"
                 alt=""
-                srcset=""
+                
               />
             </div>
           </div>

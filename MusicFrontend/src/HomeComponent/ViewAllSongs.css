@@ -1,4 +1,4 @@
-.Homebody {
+.VHomebody {
     flex: 1;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@
     border-radius: 20px;
   }
 
-  .HomebodyInfos {
+  .VHomebodyInfos {
     display: flex;
     justify-content: center;
     height: 34rem;
